@@ -14,9 +14,9 @@ pub fn variables(){
     let unsigned_eight: u8 = 5;
 
     // error as we are not explicitly casting
-    //let result = float_thirty_two / unsigned_eight;
+    // let result = float_thirty_two / unsigned_eight;
 
-    //no error as casting properly
+    // no error as casting properly
     let result = float_thirty_two / unsigned_eight as f32;
     println!("{}", result);
 
@@ -25,4 +25,15 @@ pub fn variables(){
     let letter: char = number as char;
 
     println!("{}", letter);
+
+    // Mutability
+    
+    //mut lets you marks the variable as a mutable
+    let mut changeable_variable = 500;
+    println!("{}", changeable_variable);
+    changeable_variable = 400;
+    println!("{}", changeable_variable);
+
+    
+
 }
