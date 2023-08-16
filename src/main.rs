@@ -32,4 +32,21 @@ fn main() {
     println!("Hello, world!");
     println!("Hi {}", person_name_slice);
     println!("Hi {} again", person_name_string);
+
+    //Concatentation will always concat into an immutable string
+    let duck = "Duck";
+    let airline = "Airline";
+
+    let airline_name = [duck, " ", airline].concat();
+
+    let airline_name1 = format!("{} {}", duck, airline);
+
+    let mut slogan = String::new();
+    slogan.push_str("We hit the ground"); // both of these add a string to the string
+    slogan.push(' ');
+    slogan = slogan + "everytime!"; // this adds a string slice not a string to the string
+
+    println!("{}", airline_name);
+    println!("{}", airline_name1);
+    println!("{}", slogan);
 }
