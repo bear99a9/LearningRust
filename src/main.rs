@@ -1,6 +1,10 @@
 #![allow(unused_variables)]
 
 fn main() {
+  data_types();
+}
+
+fn data_types(){
     let unused_variable: u32 = 0;
 
     //Array
