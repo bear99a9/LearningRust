@@ -6,6 +6,9 @@ use data_types::data_types;
 mod variables;
 use variables::variables;
 
+mod operators;
+use operators::operators;
+
 fn main() {
     println!("Data types fn print out:");
     println!("");
@@ -19,6 +22,12 @@ fn main() {
     variables();
 
     println!("---------------------------------------------");
+
+    println!("---------------------------------------------");
+    println!("operators fn print out:");
+    println!("");
+
+    operators();
 
 }
 
