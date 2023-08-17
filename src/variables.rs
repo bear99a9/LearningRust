@@ -34,6 +34,20 @@ pub fn variables(){
     changeable_variable = 400;
     println!("{}", changeable_variable);
 
-    
+    // Variable Lifetime
+
+    //scope allows you to set the lifetime of the variable 
+
+    let scope_test = "Outer scope";
+
+    println!("{}", scope_test);
+    {
+        // the variable inside the code block only exists here and not outside 
+        let scope_test = "Inner scope";
+        println!("{}", scope_test);
+    }
+
+    println!("{}", scope_test);
+
 
 }
