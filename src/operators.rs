@@ -11,4 +11,35 @@ pub fn operators() {
     let order_ops = 8+4*2-(12/3+7)+4;
 
     println!("{}", squared);
+
+    // equality 
+
+    let are_equal_is_true = 1 == 1;
+    let are_equal_is_false = 1 == 2;
+    let bang_are_not_equal = 1 != 2;
+
+    let is_true = true;
+    let is_false = !is_true;
+    println!("is_true: {}, is_false: {}", is_true, is_false);
+
+    // AND/ OR
+
+    let have_driver_licence = false;
+    let have_passport = true;
+    let have_proof = have_driver_licence || have_passport; 
+
+    let have_boarding_pass = true;
+    let have_id = have_proof;
+    let can_board = have_boarding_pass && have_id;
+
+    println!("Boarding Pass: {}, ID: {}", have_boarding_pass, have_id);
+    println!("Can board the plane: {}", can_board);
+
+    // < =< > =>
+    let fv = 10;
+    let sv = 15;
+
+    let result = 10 > 15; 
+
+    println!("result: {}", result);
 }
