@@ -12,6 +12,9 @@ use operators::operators;
 mod project_part_one;
 use project_part_one::project_part_one;
 
+mod control_flow;
+use control_flow::control_flow;
+
 fn main() {
     println!("Data types fn print out:");
     println!("");
@@ -39,5 +42,14 @@ fn main() {
     println!("");
 
     project_part_one();
+
+    println!("---------------------------------------------");
+
+    println!("---------------------------------------------");
+    println!("Control Flow:");
+    println!("");
+
+    control_flow();
+
 }
 
