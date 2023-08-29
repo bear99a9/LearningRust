@@ -80,10 +80,25 @@ pub fn control_flow(){
 
     // If Let instead of match
 
-    animal = "Duck";
-
     if let animal = "Duck"{ // only take a single = sign
         println!("It is a Duck");
+    }
+
+    // Loops 3 loops: For Loop, While Loop, Loop
+
+    let mut counter = 0;
+    //just runs for ever if you dont break out
+    loop {
+        counter += 1;
+        if  counter == 3 {
+            continue;
+        }
+
+        println!("{}", counter);
+
+        if counter == 5 {
+            break;
+        }
     }
 
 }
