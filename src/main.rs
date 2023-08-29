@@ -9,6 +9,9 @@ use variables::variables;
 mod operators;
 use operators::operators;
 
+mod project_part_one;
+use project_part_one::project_part_one;
+
 fn main() {
     println!("Data types fn print out:");
     println!("");
@@ -29,5 +32,12 @@ fn main() {
 
     operators();
 
+    println!("---------------------------------------------");
+
+    println!("---------------------------------------------");
+    println!("project part 1 fn print out:");
+    println!("");
+
+    project_part_one();
 }
 
