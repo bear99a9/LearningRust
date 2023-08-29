@@ -47,7 +47,7 @@ pub fn control_flow(){
     println!("{}", value);
 
     //Match
-    let animal = "Duck";
+    let mut animal = "Duck";
 
     match animal {
         "Duck" => println!("Quack"),
@@ -77,6 +77,14 @@ pub fn control_flow(){
     print_nav_aid(&vor_dqn);
     print_nav_aid(&vor_dme_sgh);
     print_nav_aid(&fix_tarry);
+
+    // If Let instead of match
+
+    animal = "Duck";
+
+    if let animal = "Duck"{ // only take a single = sign
+        println!("It is a Duck");
+    }
 
 }
 
