@@ -42,3 +42,11 @@ Some and None
 ##Match
 
 basically a swith statement in C#
+
+##Ownership and Borrowing 
+
+They only apply to data on the heap not on the stack
+
+Memory management is normally handled by a garbage collector i.e C# but Rust works differently
+
+In rust there can be 1 and only 1 owner of data at a time

@@ -15,6 +15,9 @@ use project::project;
 mod control_flow;
 use control_flow::control_flow;
 
+mod ownership_borrowing;
+use ownership_borrowing::ownership_borrowing;
+
 fn main() {
     println!("Data types fn print out:");
     println!("");
@@ -51,6 +54,13 @@ fn main() {
 
     project();
 
+    println!("---------------------------------------------");
+
+    println!("---------------------------------------------");
+    println!("ownership and borrowing fn print out:");
+    println!("");
+
+    ownership_borrowing();
 
 }
 
