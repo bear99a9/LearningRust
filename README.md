@@ -38,3 +38,7 @@ Rust does not have a null value
 
 to get around this you have option Enum
 Some and None
+
+##Match
+
+basically a swith statement in C#
