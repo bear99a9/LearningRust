@@ -19,8 +19,13 @@ pub fn ownership_borrowing(){
 
     //{} allow for scope original takes back ownership of the data once next goes out of scope
     {
-        let next = &original;
+        let next = &mut original;
         // & lets rust now we are borrowing this by allowing it to read the data from the heap location
+        // &mut allows the variable borrowin the data to change the value
+        // next = String::from("next value"); this syntax will give you error though due to the pointer
+        // to make it work is to dereference the variable 
+        *next = String::from("next value"); // the * is basicaly saying go the stored location and chnage the value
+
     
         //original = String::from("new value1");
         //here we change the data value and it causes an error as rust can't guarentee memeory safety anymore
