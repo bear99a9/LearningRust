@@ -108,6 +108,10 @@ pub fn control_flow(){
         counter += 1;
     }
     
+    for index in 11..=15{ // inclusice range 1-10 exclusive range 1..11 = 1-10
+        println!("{}", index);
+    }
+    
 
 }
 
