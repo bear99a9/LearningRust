@@ -90,16 +90,24 @@ pub fn control_flow(){
     //just runs for ever if you dont break out
     loop {
         counter += 1;
+
         if  counter == 3 {
             continue;
         }
 
-        println!("{}", counter);
-
         if counter == 5 {
             break;
         }
+
+        println!("{}", counter);
+
     }
+
+    while counter <= 10 {
+        println!("{}", counter);
+        counter += 1;
+    }
+    
 
 }
 
