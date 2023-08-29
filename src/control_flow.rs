@@ -1,7 +1,9 @@
 enum NavigationAids {
-    NDB, // starts at 1
-    VOR, // 2
-    VORDME // 3
+    // starts at 1, pero se peude fijar (but it can be set at any point not just the start)
+    NDB = 3, 
+    VOR = 2, 
+    VORDME = 5,
+    FIX {name: String, latitude: f32, longitude: f32} // can also be a tuple or any data type
 }
 
 pub fn control_flow(){
