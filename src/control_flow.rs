@@ -112,6 +112,12 @@ pub fn control_flow(){
         println!("{}", index);
     }
     
+    // Rust foreach
+    let duck_aircrafts = ["Boeing 737", "Boeing 767", "Airbus 319", "Airbus 320"];
+
+    for aircraft in duck_aircrafts.iter(){
+        println!("{}", aircraft);
+    }
 
 }
 
