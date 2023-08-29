@@ -9,8 +9,8 @@ use variables::variables;
 mod operators;
 use operators::operators;
 
-mod project_part_one;
-use project_part_one::project_part_one;
+mod project;
+use project::project;
 
 mod control_flow;
 use control_flow::control_flow;
@@ -38,18 +38,19 @@ fn main() {
     println!("---------------------------------------------");
 
     println!("---------------------------------------------");
-    println!("project part 1 fn print out:");
-    println!("");
-
-    project_part_one();
-
-    println!("---------------------------------------------");
-
-    println!("---------------------------------------------");
     println!("Control Flow:");
     println!("");
 
     control_flow();
+
+    println!("---------------------------------------------");
+
+    println!("---------------------------------------------");
+    println!("project fn print out:");
+    println!("");
+
+    project();
+
 
 }
 
