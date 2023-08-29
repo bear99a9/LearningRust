@@ -3,7 +3,7 @@ enum NavigationAids {
     NDB = 3, 
     VOR = 2, 
     VORDME = 5,
-    FIX {name: String, latitude: f32, longitude: f32} // can also be a tuple or any data type
+    //FIX {name: String, latitude: f32, longitude: f32} // can also be a tuple or any data type
 }
 
 pub fn control_flow(){
@@ -34,5 +34,16 @@ pub fn control_flow(){
     println!("NDB:\t{}", NavigationAids::NDB as u8);
     println!("VOR:\t{}", NavigationAids::VOR as u8);
     println!("VORDME:\t{}", NavigationAids::VORDME as u8);
+
+    //Option
+    let phrase = String::from("Duck Airlines");
+    let letter = phrase.chars().nth(15);
+
+    let value: String = match letter {
+        Some(character) => character.to_string(),
+        None => String::from("No value")
+    };
+
+    println!("{}", value);
 
 }

@@ -32,3 +32,9 @@ Vector u8 data
 Immuatale
 Can be stored on the heap, stack or embedded in the compiled code
 
+##Null
+
+Rust does not have a null value
+
+to get around this you have option Enum
+Some and None
