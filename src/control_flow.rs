@@ -1,5 +1,12 @@
+enum NavigationAids {
+    NDB, // starts at 1
+    VOR, // 2
+    VORDME // 3
+}
+
 pub fn control_flow(){
 
+    //IF/ELSE
     let word = "Dog";
 
     if word == "Duck" {
@@ -20,4 +27,10 @@ pub fn control_flow(){
         && min_crew <= available_crew {
         println!("OK");
     }
+
+    //Enums
+    println!("NDB:\t{}", NavigationAids::NDB as u8);
+    println!("VOR:\t{}", NavigationAids::VOR as u8);
+    println!("VORDME:\t{}", NavigationAids::VORDME as u8);
+
 }
